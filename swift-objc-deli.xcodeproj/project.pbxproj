@@ -569,6 +569,7 @@
 				D84872171A34EAB800825B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D84872181A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-objc-deliTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +578,7 @@
 				D848721A1A34EAB800825B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
