@@ -9,7 +9,8 @@ class AppDelegateSpec: QuickSpec {
         describe("takeANumber") {
             it("Adds a person") {
                 expect(appDelegate.takeANumber(deliLine, name: "Chris")).to(equal(["Ada","Joe","Chris"]))
-            }
+         
+   }
         }
 
         describe("nowServing") {
