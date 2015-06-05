@@ -15,10 +15,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+       
+        
+        var deliLine = ["Ada","Joe"]
+        self.takeANumber(deliLine, name: "Bob")
+        self.nowServing(deliLine)
+        print(deliLine)
+        
+        
+        
         return true
     }
+    
+    func takeANumber(currentLine: [String], name: String) -> [String] {
+        var newLine = currentLine
+        newLine.append(name)
+        print("Your posision in line is \(newLine.count)")
+        print("\(newLine)")
+        return newLine
+    }
+    
+    func nowServing(currentLine: [String]) -> [String] {
+        var newLine = currentLine
+        if currentLine.isEmpty {
+            print("There is currently no one in line.")
+        } else {
+            newLine.removeAtIndex(0)
+            print("\(currentLine[0]) is next in line.")
+        }
+    return newLine
+    }
 
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
